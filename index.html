@@ -11,25 +11,30 @@
 <body>
    <script type="text/javascript" src="js.js"></script>
    <div id="qrcode"></div>
-   <a id="url"></a>
+   <script src="qrcode.min.js"></script>
+   <script>
+    new QRCode(document.getElementById('qrcode'), 'https://mussumipsum.com/')
+   </script>
+   <a id="url">https://mussumipsum.com</a>
    <div class="main">
-    <h1>Jennifer Ferreira Lima</h1>
-    <p align="center">Rua dos bobos, nº 0, Miguel Calmon, Bahia, 44720-000</p>
-    <p align="center">(74)99900-1203 | email@gmail.com</p>
-    <h2>Objetivo</h2>
-    <p>Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Paisis, filhis, espiritis santis. Si num tem leite então bota uma pinga aí cumpadi! Suco de cevadiss deixa as pessoas mais interessantis.</p>
-    <h2>Formação</h2>
+    <h1 id="nome">Jennifer Ferreira Lima</h1>
+    <p align="center" class="dados">Rua dos bobos, nº 0, Miguel Calmon, Bahia, 44720-000</p>
+    <p align="center" class="dados">(74)99900-1203 | email@gmail.com</p>
+    <h2 class="topicos">Objetivo</h2>
+    <p id="obj">Mussum Ipsum, cacilds vidis litro abertis. Cevadis im ampola pa arma uma pindureta. Paisis, filhis, espiritis santis. Si num tem leite então bota uma pinga aí cumpadi! Suco de cevadiss deixa as pessoas mais interessantis.</p>
+    <h2 class="topicos">Formação</h2>
     <ul>
-        <li>2018, Escola Muncipal Professor Fernando Alban, Ensino Fundamental II, Eunápolis, Bahia</li>
+        <li id="obj"><a href="https://www.youtube.com/watch?v=BZ-rGoTOESE">2018</a>, Escola Muncipal Professor Fernando Alban, Ensino Fundamental II, Eunápolis, Bahia</li>
     </ul>
-    <h2>Experiência</h2>
-    <h3>2015-Atualmente</h3>
-    <h4>Do lar, Minha Residência, Miguel Calmon, Bahia</h4>
-    <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Suco de cevadiss deixa as pessoas mais interessantis.Leite de capivaris, leite de mula manquis sem cabeça.</p>
-    <h2>Prêmios e reconhecimentos</h2>
+    <h2 class="topicos">Experiência</h2>
+    <h3 id="obj"><a href="https://www.youtube.com/watch?v=BZ-rGoTOESE">2015</a>-Atualmente</h3>
+    <h4 id="obj">Do lar, Minha Residência, Miguel Calmon, Bahia</h4>
+    <p id="obj">Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis.A ordem dos tratores não altera o pão duris.Suco de cevadiss deixa as pessoas mais interessantis.Leite de capivaris, leite de mula manquis sem cabeça.</p>
+    <h2 class="topicos">Prêmios e reconhecimentos</h2>
     <ul>
-        <li>Por conta da minha confiabilidade, minha avó me solicita a pagar todas as suas contas mensalmente</li>
+        <li id="obj">Por conta da minha confiabilidade, minha avó me solicita a pagar todas as suas contas mensalmente</li>
     </ul>
    </div>
+   <div class="quantidade"></div>
 </body>
 </html>

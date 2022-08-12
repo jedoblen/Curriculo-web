@@ -8,4 +8,19 @@ h1{
 
 body{
     font-family: 'JetBrains Mono', monospace;
+    background-color: #C1EDE3;
 }
+
+#url {
+    float: right;
+    width: 50%;
+  }
+  
+  #url::before {
+    content: "URL: ";
+  }
+  
+  #qrcode {
+    float: right;
+    size: 30px;
+  }
