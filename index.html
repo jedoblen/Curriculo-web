@@ -19,14 +19,6 @@
 	    height: 120})
    </script>
    <a id="url">https://www.youtube.com/watch?v=BZ-rGoTOESE</a>
-   <div class="contador">
-    <p>Contador</p>
-    <p class="quantidade"><br>Palavras</p>
-    <p>Resumo</p>
-    <input type="radio" name="modo" value="resumido" checked="checked">
-    <p>Completo</p>
-    <input type="radio" name="modo" value="completo" checked="checked">
-   </div>
    <div class="main">
     <h1 id="nome">Jennifer Ferreira Lima</h1>
     <p align="center" class="dados">Rua dos bobos, nº 0, Miguel Calmon, Bahia, 44720-000</p>
@@ -46,29 +38,5 @@
         <li class="obj">Por conta da minha confiabilidade, minha avó me solicita a pagar todas as suas contas mensalmente</li>
     </ul>
    </div>
-   <div class="quantidade"></div>
-   <script>
-    let regularVersion=document.querySelectorAll('.main')[0].innerHTML
-    function resume(){
-        document.getElementsByClassName('obj').innerHTML = '...'
-        console.log('Resumed')
-    count();
-}
-    function complet(){
-        document.querySelectorAll('.main')[0].innerHTML=regularVersion
-        console.log('Back to normal')
-    count();
-}
-    let buttons=document.querySelectorAll("input[name='modo']")
-    count();
-    for(const b of buttons){
-        b.onclick=(e)=>{
-            let value=e.target.value
-            console.log(value)
-            if(value=='completo') complet()
-            if(value=='resumido') resume()
-    }
-}
-   </script>
 </body>
 </html>
