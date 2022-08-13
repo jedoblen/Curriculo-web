@@ -11,19 +11,41 @@ body{
     background-color: #C1EDE3;
 }
 
-topicos{
+.topicos{
   background-color: aqua;
 }
 #url {
-    float: right;
-    width: 50%;
-  }
+  display: inline;
+  position: relative;
+  float: right;
+  width: 50%;
+  top: -3.5em;
+}
+
   
-  #url::before {
-    content: "URL: ";
-  }
+#url::before {
+  content: "URL: ";
+}
   
+#qrcode {
+  float: right;
+  size: 30px;
+}
+
+@media screen {
   #qrcode {
-    float: right;
-    size: 30px;
+  display: none;
   }
+  #url {
+    display: inline;
+  }
+}
+
+@media print {
+  #qrcode {
+    position: absolute;
+    float: right;
+    width: 100px;
+    top: 1em;
+    right: 1em;
+}}
