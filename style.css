@@ -14,24 +14,7 @@ body{
 .topicos{
   background-color: aqua;
 }
-#url {
-  display: inline;
-  position: relative;
-  float: right;
-  width: 50%;
-  top: -3.5em;
-}
-
   
-#url::before {
-  content: "URL: ";
-}
-  
-#qrcode {
-  float: right;
-  size: 30px;
-}
-
 @media screen {
   #qrcode {
   display: none;
@@ -48,4 +31,12 @@ body{
     width: 100px;
     top: 1em;
     right: 1em;
-}}
+  }
+  #url{
+    display: none;
+  }
+}
+
+#url::before{
+  content: "URL: "
+}
